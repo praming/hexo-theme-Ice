@@ -1,0 +1,12 @@
+<hr />
+<div class="footer">
+	<% if(theme.social){%>
+        <% theme.social.forEach(function (item) {%>
+            <a href="<%- item.href%>" rel="external nofollow" title="<%- item.name%>" target="_blank">
+		    	<i class="iconfont"><%- item.icon%></i>
+		    </a>&nbsp;&nbsp;
+        <%})%>
+	<%}%>
+</div>
+<%- js('js/highlight.js') %>
+<script>hljs.initHighlightingOnLoad();</script>

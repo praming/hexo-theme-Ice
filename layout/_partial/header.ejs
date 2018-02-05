@@ -1,0 +1,20 @@
+<div class="container">
+	<header class="header">
+	  <div class="blog-title">
+	    <a href="<%- url_for() %>"> <%- image_tag('img/logo.png') %></a>
+	  </div>
+	  <nav>
+	    <ul class="menu">
+	      <% for (name in theme.menu) { %>
+	        <li class="menu-item">
+	          <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link nav-underline"><%- __('Menu.' + name) %></a>
+	        </li>&sdot;
+	      <% } %>
+	      	<li class="menu-item">
+	          <a href="/about" class="menu-item-link nav-underline">关于</a>
+	        </li>
+	    </ul>
+	  </nav>
+	</header>
+</div>
+<hr />

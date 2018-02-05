@@ -1,0 +1,39 @@
+.header {
+  margin: 2em 0
+  display: flex
+  align-items: baseline
+  justify-content: space-between
+  padding: 0 20px;
+  .menu {
+    .menu-item {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .menu-item-link {
+      color: #333;
+      text-decoration: none;
+      &:hover {
+        color: #e04f5f;
+      }
+
+    }
+    .nav-underline{
+            position: relative;
+        }
+		.nav-underline:before{
+		            content: "";
+		            position: absolute;
+		            left: 0;
+		            bottom: -10px;
+		            height: 2px;
+		            width: 100%;
+		            background: #e04f5f;
+		            transform: scale(0);
+		            transition: all 0.3s;
+		      }
+		.nav-underline:hover:before{
+		            transform: scale(1);
+	        }
+  }
+}
+

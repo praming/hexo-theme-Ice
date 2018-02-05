@@ -1,0 +1,112 @@
+hr.one{
+	height: 1px;
+	border: 0;
+	clear: both;
+	background-color: #EEEEEE;
+	width: 200px;
+	margin: 0 auto;
+}
+hr.two{
+	height: 1px;
+	border: 0;
+	clear: both;
+	background-color: #EEEEEE;
+	margin-left:20px;
+	width: 200px;
+}
+.container {
+	position: relative;
+	margin: 0 auto;
+	box-sizing: border-box
+}
+.text-small{
+	font-size: 0.875em;
+}
+.text-big{
+	font-size: 1.25em;
+}
+/*====================================================
+    pagination
+====================================================*/
+.pagination {
+  margin: 20px 0;
+  text-align: center;
+  display: block;
+}
+.pagination a {
+  color: #666666;
+  text-align: center;
+  display: inline-block;
+}
+.pagination a:hover {
+  color: #e04f5f;
+  text-decoration: none;
+}
+.pagination a i {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+}
+.pagination .prev {
+  margin: 0 5px;
+}
+.pagination .next {
+  margin: 0 5px;
+}
+.pagination .page-number {
+  margin: 0 3px;
+  display: inline-block;
+  line-height: 36px;
+  padding: 0 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.pagination .current {
+  color: #e04f5f;
+}
+
+/*引用图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*响应式布局*/
+.row:after,.row:before {clear: both;display: block;content: ''}
+/*浏览器宽度小于767px*/
+@media only screen and (max-width:767px){
+	.container{margin: 0 10px;}
+	.toc{display:none}
+}
+/*浏览器宽度大于768px,小于1023px*/
+@media only screen and (min-width:768px) and (max-width:1023px){
+	.container{margin: 0 10px;}
+	.toc{display:none}
+}
+/*浏览器宽度大于1024px,小于1199px*/
+@media only screen and (min-width:1024px) and (max-width:1199px){
+	.container{width: 950px;}
+	.toc{display:none}
+}
+/*浏览器宽度大于1200px*/
+@media only screen and (min-width:1200px){
+	.container {width: 950px;}
+}
+
+@import "_partial/main";
+@import "_partial/header";
+@import "_partial/notice";
+@import "_partial/post";
+@import "_partial/archive";
+@import "_partial/footer";

@@ -1,0 +1,27 @@
+<div class="container">	
+	<div class="archive-main">
+	    <div class="archive-title">
+	    	<h2><%= page.title %></h2>	    	
+	    </div>
+	    <div class="archive-meta">
+	   	    <%- date(page.date, "YYYY-MM-DD") %>&nbsp;&nbsp;&sdot;&nbsp;&nbsp; 
+	   	    <% page.tags.forEach(function(tag){ %>
+            	<a class="tag" href="<%= config.root %>tags/#<%= tag.name %>"title="<%= tag.name %>"><%= tag.name %></a>&nbsp;&nbsp;
+            <% }) %>
+	    </div>
+		<hr class="one"/>
+		<div class="archive-content typo">
+			<%- page.content %> 
+		</div>
+		<% if(page.comments){ %>
+		    <div id="comments">
+		        <%- partial('_vendor/comments/index', {page: page}) %>
+		    </div>
+		<% } %>
+	</div>
+</div>
+<div id="toc">
+    <div class="archive-toc">
+        <%- toc(page.content, {list_number: false}) %>
+    </div>
+</div>

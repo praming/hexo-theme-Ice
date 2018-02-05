@@ -1,0 +1,24 @@
+<div class="container">
+	<% if (page.current < 2){ %>
+		<%- partial('_partial/notice') %>
+	<% } %>
+	<section class="posts">
+	  <% page.posts.each(function (post) { %>
+	    <article class="post">
+	      <div class="post-title">
+	        <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+	      </div>
+	      <p>
+	      	<% if(post.excerpt) { %>
+                <%= strip_html(post.excerpt) + '…' %>
+            <% } else { %>
+                <%= truncate(strip_html(post.content), {length: theme.excerptLength || 180, separator: ''}) %>
+            <% } %>
+	      </p>
+	       <%- partial('_partial/article-meta', {post: post}) %>
+	    </article>
+	    <hr class="two">
+	  <% }) %>
+	</section>
+	<%- partial('_partial/paginator') %>	
+</div>
