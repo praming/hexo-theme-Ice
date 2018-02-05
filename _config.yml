@@ -3,6 +3,8 @@ menu:
   Archives: /archives
   Links: /links
 
+
+   
 ## favicon 
 favicon: /favicon.ico
 
@@ -34,6 +36,12 @@ social:
    icon: '&#xe6ee;'
    href: /atom.xml
 
+# add post views
+leancloud_visitors:
+  enable: true
+  app_id: hESKc51xYeFsVNctLcYmpOS1-gzGzoHsz
+  app_key: IPK32hWXJh8WMPOW4xEqsA9V
+
 ## 主题评论
 
 ### gitment
@@ -47,8 +55,8 @@ gitment:
 
 ### 来必力
 livere: 
-  enable: true
-  livere_uid: MTAyMC8zMzA1MS85NjEz
+  enable: false
+  livere_uid: 
 
 ### 友言评论(服务不稳定)
 uyan:
@@ -66,6 +74,20 @@ changyan:
   enable: false
   appid: 
   conf: 
+  
+# Valine评论
+# 需要 https://leancloud.cn 的appid和appkey 
+# 更多请登录 https://valine.js.org
+valine:
+  enable: true
+  appid:  hESKc51xYeFsVNctLcYmpOS1-gzGzoHsz  # 你的appid
+  appkey: IPK32hWXJh8WMPOW4xEqsA9V  # 你的appkey
+  notify: false # 开启评论邮件回复 , https://github.com/xCss/Valine/wiki
+  verify: false # 开启验证码
+  placeholder: ヾﾉ≧∀≦)o来啊，快活啊! # 评论框显示内容
+  avatar: monsterid # gravatar 头像类型
+  guest_info: nick,mail,link # 评论者需要填写的属性
+  pageSize: 10 # 每页评论数
 
 ## 网站访问统计
 
