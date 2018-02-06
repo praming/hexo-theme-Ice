@@ -2,9 +2,7 @@ menu:
   Home: /
   Archives: /archives
   Links: /links
-
-
-   
+ 
 ## favicon 
 favicon: /favicon.ico
 
@@ -71,15 +69,15 @@ disqus:
 
 ### 畅言评论(需要ICP备案)
 changyan:
-  enable: false
-  appid: 
-  conf: 
+  enable: true
+  appid: cytsbYV5p
+  conf: prod_5db6bea920c9a0d149cedeab44860234
   
 # Valine评论
 # 需要 https://leancloud.cn 的appid和appkey 
 # 更多请登录 https://valine.js.org
 valine:
-  enable: true
+  enable: false
   appid:  hESKc51xYeFsVNctLcYmpOS1-gzGzoHsz  # 你的appid
   appkey: IPK32hWXJh8WMPOW4xEqsA9V  # 你的appkey
   notify: false # 开启评论邮件回复 , https://github.com/xCss/Valine/wiki
@@ -88,6 +86,7 @@ valine:
   avatar: monsterid # gravatar 头像类型
   guest_info: nick,mail,link # 评论者需要填写的属性
   pageSize: 10 # 每页评论数
+
 
 ## 网站访问统计
 
@@ -115,3 +114,5 @@ coding_pages: true
 ## 友链设置
 links:
   - 个人博客: http://www.shenliyang.com
+  
+
