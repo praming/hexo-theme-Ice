@@ -1,38 +1,37 @@
 menu:
   Home: /
   Archives: /archives
+  Categories: /categories
+  Tags: /tags
   Links: /links
- 
+
+
+
 ## favicon 
 favicon: /favicon.ico
 
-## Feed 
-rss: /atom.xml
- 
+
 ## 网站公告设置
 notification: |-
-            <p>主题Ice V1.0 版本已经上线！欢迎使用~ <br/>
-            主题下载：<a href="https://github.com/praming/hexo-theme-Ice" title="fork me" target="_blank">Ice 主题</a>&nbsp;&nbsp;&nbsp;&nbsp;详细的使用文档请点击:<a href="https://github.com/praming/hexo-theme-Ice" title="fork me" target="_blank">使用说明</a>.<br/>
-            <hr/>接受贡献，包括不限于提交问题与需求，修复代码。接受贡献，包括不限于提交问题与需求，修复代码欢迎Pull Request<br/>支持主题：<a href="https://github.com/praming/hexo-theme-Ice/stargazers"  target="_blank">Star一下</a>
+            <p>慢慢学，来得及，不要慌
             </p>
 
 ## 社交设置
 social:
  - name: Github
    icon: '&#xeee2;'
-   href: //github.com/praming
+   href: https://github.com/xyhmnb
  - name: 邮箱
    icon: '&#xe69f;'
-   href: mailto:i@praming.cn
+   href: 1459792120@qq.com
  - name: 微信
    icon: '&#xe7e5;'
-   href: 34721974
+   href: 
  - name: 微博
    icon: '&#xe629;'
-   href: //weibo.com/praming
- - name: RSS
-   icon: '&#xe6ee;'
-   href: /atom.xml
+   href: 没有微博
+   
+   
 
 # add post views
 leancloud_visitors:
@@ -69,10 +68,10 @@ disqus:
 
 ### 畅言评论(需要ICP备案)
 changyan:
-  enable: true
+  enable: false
   appid: cytsbYV5p
   conf: prod_5db6bea920c9a0d149cedeab44860234
-  
+
 # Valine评论
 # 需要 https://leancloud.cn 的appid和appkey 
 # 更多请登录 https://valine.js.org
@@ -112,7 +111,24 @@ icp: 豫ICP备10206454号-2
 coding_pages: true
 
 ## 友链设置
+
+# for links
 links:
-  - 个人博客: http://www.shenliyang.com
-  
+ - url: http://www.xyhmnb.ml
+   name: 友链1
+   title: xxx
+ - url: http://www.xyhmnb.ml
+   name: 友链2
+   title: xxx
+ - url: http://www.xyhmnb.ml
+   name: 友链3
+   title: xxx
+ - url: http://www.xyhmnb.ml
+   name: 友链3
+   title: xxx
+
+
+
+
+
 

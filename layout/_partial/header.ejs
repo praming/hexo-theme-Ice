@@ -7,14 +7,15 @@
 	    <ul class="menu">
 	      <% for (name in theme.menu) { %>
 	        <li class="menu-item">
-	          <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link nav-underline"><%- __('Menu.' + name) %></a>
+	          <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link nav-underline"><%=name%></a>
 	        </li>&sdot;
 	      <% } %>
-	      	<li class="menu-item">
-	          <a href="/about" class="menu-item-link nav-underline">关于</a>
-	        </li>
-	    </ul>
+	      <li class="menu-item">
+	      <a href="/about">关于</a>
+	      </li>
+       </ul>
 	  </nav>
 	</header>
 </div>
+
 <hr />

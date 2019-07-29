@@ -1,0 +1,19 @@
+
+<div class="container">
+	<div class="link">
+		<% if(theme.links){%>   
+		<ul>
+		<% theme.links.forEach(function (item){%>
+		 <li >
+	  		<a href="<%-item.url%>" target="_blank">
+	  		<%-item.name%>
+	  		<hr class="three"/>
+	  		<%-item.title%>
+	  		</a>
+		</li>
+	  	<%})%>
+	  	</ul>
+		<%}%>
+	</div>
+</div>
+

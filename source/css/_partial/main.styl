@@ -17,10 +17,12 @@ html.borderbox *, html.borderbox *:before, html.borderbox *:after {
 }
 
 /* 内外边距通常让各个浏览器样式的表现位置不同 */
+
 body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
   margin: 0;
   padding: 0;
 }
+
 
 /* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
 article, aside, details, figcaption, figure, footer, header, menu, nav, section {
@@ -34,7 +36,7 @@ audio, canvas, video {
 
 /* 要注意表单元素并不继承父级 font 的问题 */
 body, button, input, select, textarea {
-  font: 300 1em/2.0 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font: 300 1.2em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -159,7 +161,7 @@ ins, a {
  * 一篇关于 <u> 标签的很好文章：http://html5doctor.com/u-element/
  */
 u, .typo-u {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* 标记，类似于手写的荧光笔的作用 */
@@ -195,6 +197,7 @@ hr {
   margin-bottom: 0.8em;
   height: 10px;
 }
+
 
 /* 底部印刷体、版本等标记 */
 small, .typo-small,

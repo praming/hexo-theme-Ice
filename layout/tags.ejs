@@ -1,0 +1,17 @@
+<div class="container">
+<%- list_tags() %>
+<p><% -page.tags%></p>
+<% if(site.tags.length){ %>
+<ul>
+	    <% site.tags.forEach(function (tag) { %>
+	      <li >
+	      <a href="<%=config.root%>tags/<%=tag.name%>" title="<%=tag.name%>"><%=tag.name%></a>
+	        
+	      </li>
+	    <% }) %>
+	  </ul>
+<% } %>
+</div>
+
+
+

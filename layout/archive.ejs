@@ -1,5 +1,5 @@
 <div class="container">
-<section class="archive">
+<div class="page-content box-shadow-medium">
 	  <ul class="post-archive">
 	    <% page.posts.each(function (post) { %>
 	      <li class="post-item">
@@ -8,6 +8,7 @@
 	      </li>
 	    <% }) %>
 	  </ul>
-	</section>
+
 	<%- partial('_partial/paginator') %>	
+	</div>
 </div>
